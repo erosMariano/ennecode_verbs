@@ -1,5 +1,3 @@
-// import data from "@/app/lib/palaravas.json"
-// import PageVerbs from "./components/teste"; 
 import Star from "@/app/images/star.svg"
 import Star2 from "@/app/images/star2.svg"
 import EnneCode from "@/app/images/ennecode.svg"
@@ -13,7 +11,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <main className="px-4 flex-1 flex items-center relative justify-center">
             {/* <PageVerbs verbs={data.verbs}/> */}
-            <section className="relative z-20 flex items-center justify-center flex-col">
+            <section className="pt-12 relative z-20 flex items-center justify-center flex-col">
               <h1 className="caprismo text-white --font-caprismo text-4xl text-center mb-5">Hello, please type your name</h1>
               <LoginHome />
             </section>
