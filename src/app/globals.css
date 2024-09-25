@@ -15,6 +15,9 @@
 }
 body {
   background:   #1E1E1E;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .wave{

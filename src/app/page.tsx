@@ -7,7 +7,7 @@ import LoginHome from "./components/views/Home";
 
 export default function Home() {
   return (
-    <div className="min-h-[calc(100vh-100px)] flex flex-col">
+    <div className="flex flex-col flex-1">
       <main className="px-4 flex-1 flex items-center relative justify-center">
             {/* <PageVerbs verbs={data.verbs}/> */}
             <section className="pt-12 relative z-20 flex items-center justify-center flex-col">
