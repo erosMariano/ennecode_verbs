@@ -1,7 +1,6 @@
 import Star from "@/app/images/star.svg"
 import Star2 from "@/app/images/star2.svg"
 import EnneCode from "@/app/images/ennecode.svg"
-import Wave from "@/app/images/wave.svg"
 
 import Image from "next/image";
 import LoginHome from "./components/views/Home";
