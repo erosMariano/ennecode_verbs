@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     actors: "EnneCode",
     title: "Verbify",
     description: "Your best English app",
-    images: "./images/verbify.png",
+    images: "https://raw.githubusercontent.com/erosMariano/ennecode_verbs/refs/heads/master/public/image/verbify.png",
   },
 };
 
