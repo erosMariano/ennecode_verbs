@@ -96,7 +96,7 @@ export default function Page() {
   return (
     <>
       <ToastContainer />
-      <main className="px-4 pt-20 min-h-screen flex flex-col">
+      <main className="px-4 pt-20 min-h-[calc(100vh-100px)] flex flex-col">
         <h1 className="caprismo text-white text-4xl flex gap-1 text-center justify-center">
           Now, let&apos;s start! <Image src={Stars} alt="" />
         </h1>
