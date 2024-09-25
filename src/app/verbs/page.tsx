@@ -7,6 +7,7 @@ import Input from "../components/input";
 import ButtonPrimary from "../components/button";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import EnneCode from "@/app/images/enne-code-dark.svg"
 
 import data from "@/app/lib/palaravas.json";
 
@@ -75,13 +76,13 @@ export default function Page() {
 
     if (pastParticiple !== verbActive.past_participle) {
       console.log("Errou o correto é: ", verbActive.past_participle);
-      toastMessage({message: `Errou o Past Simple de: ${verbActive.infinitive}`, type: "error"})
+      toastMessage({message: `Errou o Past Participle de: ${verbActive.infinitive}`, type: "error"})
       hasError = true;
     }
 
     if (translation !== verbActive.translation) {
       console.log("Errou o correto é: ", verbActive.translation);
-      toastMessage({message: `Errou o Past Simple de: ${verbActive.infinitive}`, type: "error"})
+      toastMessage({message: `Errou a tradução: ${verbActive.infinitive}`, type: "error"})
       hasError = true;
     }
 
@@ -95,7 +96,7 @@ export default function Page() {
   return (
     <>
       <ToastContainer />
-      <main className="px-4 pt-20">
+      <main className="px-4 pt-20 min-h-screen flex flex-col">
         <h1 className="caprismo text-white text-4xl flex gap-1 text-center justify-center">
           Now, let&apos;s start! <Image src={Stars} alt="" />
         </h1>
@@ -112,6 +113,10 @@ export default function Page() {
           <Input id="translate" label="Type the Translate" />
           <ButtonPrimary label="Submit" type="verifyVerb" />
         </form>
+
+        <div className="flex items-end justify-center flex-1 pb-5">
+          <Image src={EnneCode} alt="Developed by EnneCode"/>
+        </div>
       </main>
     </>
   );
