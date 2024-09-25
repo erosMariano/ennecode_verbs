@@ -17,9 +17,11 @@ export default function Home() {
             </section>
 
             <Image src={Star} alt="star" className="absolute top-0 right-0"/>
-            <Image src={Star2} alt="star" className="absolute z-10 -bottom-8 left-0"/>
+            <Image src={Star2} alt="star" className="absolute z-10 -bottom-1 left-0"/>
+            <div className="wave"></div>
         </main>
-        <Image src={Wave} alt="wave" className="-mb-12 relative w-full"/>
+
+        {/* <Image src={Wave} alt="wave" className="-mb-12 relative w-full"/> */}
 
         <footer className="pt-28 pb-8 bg-white flex items-center justify-center flex-col">
             <Image src={EnneCode} alt="Developed by EnneCode"/>
