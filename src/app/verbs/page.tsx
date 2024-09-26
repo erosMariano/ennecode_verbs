@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import EnneCode from "@/app/images/enne-code-dark.svg";
 import data from "@/app/lib/palaravas.json";
 import { toastMessage } from "../lib/toastMessage";
+import Header from "../components/header";
 
 interface Verbs {
   infinitive: string;
@@ -98,14 +99,16 @@ export default function Page() {
     },
     [verbActive, randomVerb]
   );
-
+  console.log()
   if (!verbActive) return null;
   return (
     <>
+      <Header />
       <ToastContainer />
-      <main className="px-4 pt-20 flex flex-col flex-1">
+      <main className="px-4 flex flex-col flex-1 pt-12">
+        <p className="text-base poppins text-white mb-6"><span className="text-[#FFC62F]">{completedVerbs.size}</span>/80</p>
         <div className="flex flex-1 justify-between flex-col">
-          <h1 className="caprismo text-white text-4xl flex gap-1 text-center justify-center">
+          <h1 className="caprismo text-white text-4xl flex gap-1">
             Now, let&apos;s start! <Image src={Stars} alt="" />
           </h1>
           <p className="mb-10 text-2xl caprismo text-white mt-20">
