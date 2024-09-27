@@ -99,7 +99,6 @@ export default function Page() {
     },
     [verbActive, randomVerb]
   );
-  console.log()
   if (!verbActive) return null;
   return (
     <>
