@@ -121,7 +121,7 @@ export default function Page() {
             <Input id="past_simple" label="Type Past Simple" />
             <Input id="past_participle" label="Type Past Participle" />
             <Input id="translate" label="Type the Translate" />
-            <ButtonPrimary label="Submit" type="verifyVerb" />
+            <ButtonPrimary loading={false} label="Submit" type="verifyVerb" />
           </form>
         </div>
 
